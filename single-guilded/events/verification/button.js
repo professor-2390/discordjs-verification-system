@@ -15,7 +15,7 @@ module.exports = {
   async execute(interaction, client) {
     if (!interaction.isButton()) return;
 
-    const role = interaction.guild.roles.cache.get("1089919428990357545"); // Set your verification role
+    const role = interaction.guild.roles.cache.get("YOUR_VERIFIED_ROLE_ID"); // Set your verification role
     if (interaction.member.roles.cache.has(role.id)) {
       return interaction.reply({
         content: "`❌` You are already verified",
